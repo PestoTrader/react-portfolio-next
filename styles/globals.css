@@ -1,9 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+ 
 }
 
 a {
@@ -15,12 +18,204 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+p {
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+h1 {
+  font-size: 6rem;
+  color: #fff;
+}
+
+.SurfApp {
+  width: 100%;
+  height: 500px;
+  position: relative;
+ 
+  color: #fff;
+}
+
+.SurfApp:before {
+  content: '';
+
+ 
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.SurfApp .Search {
+  text-align: center;
+  padding: 1rem;
+}
+
+.SurfApp input {
+  padding: .7rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  border: 1px solid rgba(255,255,255, 0.8);
+  background: rgba(255,255,255, 0.1);
+  color: #f8f8f8;
+  margin-top: 2 rem;
+}
+
+
+::placeholder {
+  color: #fff;
+}
+
+.SurfContainer {
+  max-width: 700px;
+  height: 450px;
+  margin: auto;
+  padding: 0 1rem;
+  position: relative;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.SurfApp .Top {
+  width: 100%;
+  margin: 1rem auto;
+}
+
+.SurfApp .Description {
+  position: relative;
+  right: -90%;
+  transform-origin: 0 0;
+  transform: rotate(269deg);
+}
+
+.SurfApp .Bottom {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  margin: 1rem auto;
+  margin-bottom: 300px;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: rgba(255,255,255, 0.2);
+}
+
+.bold {
+  font-weight: 700;
+}
+
+
+
+@keyframes App-logo-float {
+  0% {
+    transform: translateY(0);
   }
-  body {
-    color: white;
-    background: black;
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }
+
+
+
+input,
+button {
+
+  padding: .7rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  border: 1px solid rgba(255,255,255, 0.8);
+  background: rgba(255,255,255, 0.1);
+  color: #f8f8f8;
+}
+
+input[type='submit'],
+button {
+  cursor: pointer;
+  color: #fff;
+}
+
+.Appi {
+  margin: 0 auto;
+  max-width: 600px;
+  height: 400px;
+  width: 95%;
+}
+
+.Appi h1:before {
+  content: '💭';
+  margin-right: 0.5em;
+}
+
+.Appi h1{
+  font-size: xx-large;
+  padding-bottom: 10%;
+  padding-top: 10%;
+}
+
+.AddThoughtForm {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.AddThoughtForm input {
+  padding: 1.5rem;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  display: flex;
+}
+
+.AddThoughtForm input[type='text'] {
+  flex-grow: 1;
+  margin-right: 0.5rem;
+}
+
+.thoughts {
+  list-style-type: none;
+  padding: 1rem;
+ 
+  
+}
+
+.Thought {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 3px;
+  background-color: #fff;
+  opacity: 50%;
+  
+
+}
+
+.Thought .remove-button {
+  font-size: 70%;
+  float: right;
+  border: 0;
+  border-radius: 3px;
+  color: #000;
+  background-color: #fff;
+  opacity: 50%;
+  
+ 
+}
+
+.Thought .remove-button:hover {
+  color: #fff;
+  background-color: #000;
+}
+
