@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 
-import { Route, Link, useRouteMatch } from 'react-router-dom';
+
 
 import { AddThoughtForm } from './AddThoughtForm';
 import { Thought } from './Thought';
