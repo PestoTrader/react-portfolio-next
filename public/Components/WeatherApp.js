@@ -2,9 +2,7 @@ import React, {useState} from 'react';
 import axios from 'axios';
 
 
-// Import Link from React Router
 
-import { Link, useLocation } from "react-router-dom";
 
 
 
