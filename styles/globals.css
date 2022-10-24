@@ -282,18 +282,46 @@ h1 {
   .bold {
     font-weight: 400;
   }
+  
   .SurfApp .Bottom p {
     font-size:0.85rem;
   }
   .AddThoughtForm input {
   
     display: flex;
-    padding: .7rem .7rem;
-    font-size: 1.2rem;
+    padding: .5rem .5rem;
+    font-size: 1rem;
     border-radius: 25px;
     border: 1px solid rgba(255,255,255, 0.8);
     background: rgba(255,255,255, 0.1);
     color: #f8f8f8;
     
+  }
+  .SurfApp input {
+    padding: 0.5rem 0rem 0.5rem 0.5rem;
+    font-size: 1rem;
+    border-radius: 25px;
+    border: 1px solid rgba(255,255,255, 0.8);
+    background: rgba(255,255,255, 0.1);
+    color: #f8f8f8;
+    margin-top: 2 rem;
+    
+  }
+  .thoughts {
+    list-style-type: none;
+    padding: 0.5rem;
+    font-size: small;
+  
+  }
+  .Thought .remove-button {
+    font-size: 70%;
+    float: right;
+    border: 0;
+   
+    color: #000;
+    background-color: #fff;
+    opacity: 50%;
+    
+   
   }
 }
