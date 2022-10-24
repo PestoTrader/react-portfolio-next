@@ -10,7 +10,7 @@ import {useState} from "react";
 import WeatherAppi from '../public/Components/WeatherApp';
 import SurfBackground from '../public/silvalde 4.jpeg';
 import ThoughtPlanner from '../public/Components/ThoughtPlanner';
-import Cv from '../public/theoscottcv.jpeg';
+
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -74,14 +74,14 @@ export default function Home() {
               <p className="text-md text-justify py-2 leading-8 text-gray-600 max-w-3xl mx-auto font-light dark:text-white">Here you will find my portfolio work. The Weather App shows API integration using axios and sends get requests to a free weather service. Try entering a city name and clicking return. The Forgetful Thoughts App shows the use of function components used with state and effect hooks to create thoughts that will be erased after 15 seconds.  </p>
               </div> 
               <div className="lg:flex gap-10">
-                <div className="text-center shadow-lg p-10  my-10 h-1/2 basis-1/2 bg-gradient-to-b from-cyan-500 to-teal-500 rounded-lg" >
+                <div className="text-center shadow-lg p-10  my-10 sm:my-0 md:basis-1/2 bg-gradient-to-b from-cyan-500 to-teal-500 rounded-lg" >
                   <div>
                   <p >Weather App</p>
                   <WeatherAppi className="rounded-lg  " />
                   
                   </div>
                 </div>
-                <div className="text-center shadow-lg p-10  my-10 h-1/2 basis-1/2 bg-gradient-to-b from-cyan-500 to-teal-500 rounded-lg" >
+                <div className="text-center shadow-lg p-10  my-10 sm:my-0  md:basis-1/2 bg-gradient-to-b from-cyan-500 to-teal-500 rounded-lg" >
                   <div> 
                   <p>Forgetful Thoughts App</p>              
                   <ThoughtPlanner className="rounded-lg " />

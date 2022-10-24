@@ -69,7 +69,10 @@ h1 {
   background: rgba(255,255,255, 0.1);
   color: #f8f8f8;
   margin-top: 2 rem;
+  
 }
+
+
 
 
 ::placeholder {
@@ -132,7 +135,19 @@ h1 {
 
 
 
-input,
+input{
+
+  padding: .7rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  border: 1px solid rgba(255,255,255, 0.8);
+  background: rgba(255,255,255, 0.1);
+  color: #fff;
+
+}
+
+
+
 button {
 
   padding: .7rem 1.5rem;
@@ -147,6 +162,13 @@ input[type='submit'],
 button {
   cursor: pointer;
   color: #fff;
+  
+}
+.Search input[type='text'] {
+  flex-grow: 1;
+  margin-right: 0.5rem;
+  background-color: #fff;
+  color:#000;
 }
 
 .Appi {
@@ -156,48 +178,46 @@ button {
   width: 95%;
 }
 
-.Appi h1:before {
-  content: '💭';
-  margin-right: 0.5em;
-}
 
-.Appi h1{
-  font-size: xx-large;
-  padding-bottom: 10%;
-  padding-top: 10%;
-}
+
 
 .AddThoughtForm {
-  margin-top: 100px;
+  margin-top:  22px;
   display: flex;
   flex-wrap: wrap;
 }
 
 .AddThoughtForm input {
-  padding: 1.5rem;
-  border: 1px solid #fff;
-  border-radius: 3px;
+  
   display: flex;
+  padding: .7rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  border: 1px solid rgba(255,255,255, 0.8);
+  background: rgba(255,255,255, 0.1);
+  color: #f8f8f8;
+  
 }
 
 .AddThoughtForm input[type='text'] {
   flex-grow: 1;
-  margin-right: 0.5rem;
+  margin-right: 0rem;
+  background-color: #fff;
+  color: #000;
 }
 
 .thoughts {
   list-style-type: none;
   padding: 1rem;
- 
   
 }
 
 .Thought {
   padding: 1rem;
   margin-bottom: 1rem;
-  border-radius: 3px;
+  border-radius: 10px;
   background-color: #fff;
-  opacity: 50%;
+  opacity: 70%;
   
 
 }

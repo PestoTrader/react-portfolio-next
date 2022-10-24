@@ -30,8 +30,9 @@ export function AddThoughtForm(props) {
         placeholder="What's on your mind?"
         value={text}
         onChange={handleTextChange}
+    
       />
-      <input type="submit" value="Add" />
+      
     </form>
   );
 }
