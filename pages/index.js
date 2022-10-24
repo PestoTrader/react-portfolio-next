@@ -38,7 +38,7 @@ export default function Home() {
           <div className="text-center p-10">
             <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl dark:text-white">Theo Scott</h2>
             <h3 className="text-2xl py-2 md:text-3xl text-gray-600 dark:text-white">Front End Developer, Designer</h3>
-            <p className="text-md py-5 leading-8 text-gray-600 md-text-lg max-w-xl mx-auto dark:text-white">Freelancer providing front end dev services</p>
+          
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 
         ">
@@ -52,10 +52,7 @@ export default function Home() {
         </section>
 
         <section>
-          <div>
-            <h3 className="text-3xl py-1 text-gray-600 dark:text-white">Services</h3>
           
-          </div>
           <div className="lg:flex gap-10 mx-auto" >
             <div className="text-center shadow-lg p-10 rounded-xl my-10 mx-auto">
               <div className="text-8xl w-100 h-100 flex justify-center gap-16 py-3 text-gray-600 
@@ -69,12 +66,18 @@ export default function Home() {
           </div>
         </section>
         <section>
-           <div>
-            <h3 className="text-3xl py-1 text-gray-600 dark:text-white">Portfolio</h3>  
+        
+        <div className="lg:flex gap-10 mx-auto" >
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 mx-auto">
+            
+              <h3 className="text-3xl py-1 text-gray-600 dark:text-white">Portfolio</h3>  
               <p className="text-md text-justify py-2 leading-8 text-gray-600 max-w-3xl mx-auto font-light dark:text-white">Here you will find my portfolio work. The Weather App shows API integration using axios and sends get requests to a free weather service. Try entering a city name and clicking return. The Forgetful Thoughts App shows the use of function components used with state and effect hooks to create thoughts that will be erased after 15 seconds.  </p>
-              </div> 
-              <div className="lg:flex gap-10">
-                <div className="text-center shadow-lg p-10  my-10 sm:my-0 md:basis-1/2 bg-gradient-to-b from-cyan-500 to-teal-500 rounded-lg" >
+            </div> 
+            </div>
+        </section>
+        <section>
+            <div className="lg:flex gap-10">
+            <div className="text-center shadow-lg p-10  my-10 sm:my-0 md:basis-1/2 bg-gradient-to-b from-cyan-500 to-teal-500 rounded-lg" >
                   <div>
                   <p >Weather App</p>
                   <WeatherAppi className="rounded-lg  " />
@@ -89,7 +92,7 @@ export default function Home() {
                   </div>  
                 </div>
               </div>
-              </section>
+        </section>
       </main>    
     </div>
   )

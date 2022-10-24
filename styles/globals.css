@@ -62,7 +62,7 @@ h1 {
 }
 
 .SurfApp input {
-  padding: .7rem 1.5rem;
+  padding: 1rem 0rem 1rem 1rem;
   font-size: 1.2rem;
   border-radius: 25px;
   border: 1px solid rgba(255,255,255, 0.8);
@@ -80,7 +80,7 @@ h1 {
 }
 
 .SurfContainer {
-  max-width: 700px;
+  max-width: 400px;
   height: 450px;
   margin: auto;
   padding: 0 1rem;
@@ -173,7 +173,7 @@ button {
 
 .Appi {
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 400px;
   height: 400px;
   width: 95%;
 }
@@ -239,3 +239,61 @@ button {
   background-color: #000;
 }
 
+@media screen and (max-width: 400px){
+
+
+p {
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+h1 {
+  font-size: 5rem;
+  color: #fff;
+}
+  .SurfApp .Bottom {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+    margin: 1rem 0rem;
+    margin-bottom: 100px;
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: rgba(255,255,255, 0.2);
+  }
+  .SurfApp .Description {
+    position: relative;
+    right: -99%;
+    transform-origin: 0 0;
+    transform: rotate(269deg);
+  }
+  .SurfContainer {
+    max-width: 400px;
+    height: 450px;
+    margin: auto;
+    padding: 0 0rem;
+    position: relative;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .bold {
+    font-weight: 400;
+  }
+  .SurfApp .Bottom p {
+    font-size:0.85rem;
+  }
+  .AddThoughtForm input {
+  
+    display: flex;
+    padding: .7rem .7rem;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    border: 1px solid rgba(255,255,255, 0.8);
+    background: rgba(255,255,255, 0.1);
+    color: #f8f8f8;
+    
+  }
+}
