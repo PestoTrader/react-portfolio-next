@@ -24,7 +24,7 @@ const searchLocation = (event) => {
   return (
 
     <div className="SurfApp">
-      <div className="Search">
+      <div className="AddThoughtForm">
         <input 
         
         type="text" 
@@ -40,7 +40,7 @@ const searchLocation = (event) => {
           
           <div className="Top">
 
-              <div className="Location">
+              <div className="Location" >
                 <p>{data.name}</p>
               </div>
 
