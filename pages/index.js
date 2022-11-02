@@ -106,7 +106,7 @@ export default function Home() {
           <p  className="text-gray-600">Ecommerce Project</p>
          <Ecommerce />
          <p className=" font-montserrat text-gray-600 font-light text-lg max-w-5xl text-center dark:text-white" > This e-commerce store was made using Next JS combined with Sanity to create a front and back end system in one. A client could be provided with access to Sanity CMS and add new products and change the banners and this would dynamically change the site and add new product pages. The payment page is currently connected to a test service provided by Stripe and will work upon entering 4242 continuosly as card number details.</p>
-         <a type="button" href="https://ecommerce-sanity-build.vercel.app" target="_blank" className="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center font-montserrat mr-2 mb-2">VISIT STORE</a>
+         <a type="button" href="https://ecommerce-sanity-build.vercel.app" target="_blank" rel="noreferrer" className="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center font-montserrat mr-2 mb-2">VISIT STORE</a>
          </div>
   
           </div>
