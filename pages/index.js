@@ -5,11 +5,13 @@ import Image from "next/image";
 import deved from '../public/Theo-logo.png';
 import ReactLogo from '../public/react.png';
 import PassingThoughts from '../public/passingthoughtscanva.jpeg';
-import WeatherApp from '../public/weatherapp.jpeg';
+import WeatherAppBg from '../public/weatherapp.jpeg';
 import {useState} from "react";
 import WeatherAppi from '../public/Components/WeatherApp';
 import SurfBackground from '../public/silvalde 4.jpeg';
 import ThoughtPlanner from '../public/Components/ThoughtPlanner';
+import Ecommerce from "../public/Components/Ecommerce";
+
 
 
 export default function Home() {
@@ -97,13 +99,22 @@ export default function Home() {
                 </div>
               </div>
               <div className="lg:flex gap-10 mx-auto" >
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 mx-auto">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 mx-auto" >
               <div className="text-8xl w-100 h-100 flex justify-center gap-16 py-3 text-gray-600 
         " >
-             <p className="py-2 p-10 font-montserrat text-gray-600 font-light text-lg max-w-3xl text-center dark:text-white" >This site was created using React with Next JS as well as tailwind css. The two apps above were integrated as function classes but were originally created as standalone apps.</p>
+          <div  className=" text-center font-montserrat  p-10  my-10 rounded-lg">
+          <p  className="text-gray-600">Ecommerce Project</p>
+         <Ecommerce />
+         <p className=" font-montserrat text-gray-600 font-light text-lg max-w-5xl text-center dark:text-white" > This e-commerce store was made using Next JS combined with Sanity to create a front and back end system in one. A client could be provided with access to Sanity CMS and add new products and change the banners and this would dynamically change the site and add new product pages. The payment page is currently connected to a test service provided by Stripe and will work upon entering 4242 continuosly as card number details.</p>
+         <a type="button" href="https://ecommerce-sanity-build.vercel.app" target="_blank" className="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center font-montserrat mr-2 mb-2">VISIT STORE</a>
+         </div>
+  
           </div>
           </div>
           </div>
+
+
+        
         </section>
 
       </main>    
