@@ -11,6 +11,7 @@ import WeatherAppi from '../public/Components/WeatherApp';
 import SurfBackground from '../public/silvalde 4.jpeg';
 import ThoughtPlanner from '../public/Components/ThoughtPlanner';
 import Ecommerce from "../public/Components/Ecommerce";
+import RoboPunksNFT from '../public/Components/RoboPunksNFT';
 
 
 
@@ -107,6 +108,21 @@ export default function Home() {
          <Ecommerce className="md:h-96 md:w-96"/>
          <p className=" font-montserrat text-gray-600 font-light text-lg max-w-5xl text-center dark:text-white" > This e-commerce store was made using Next JS combined with Sanity to create a front and back end system in one. A client could be provided with access to Sanity CMS and add new products and change the banners and this would dynamically change the site and add new product pages. The payment page is currently connected to a test service provided by Stripe and will work upon entering 4242 continuosly as card number details.</p>
          <a type="button" href="https://ecommerce-sanity-build.vercel.app" target="_blank" rel="noreferrer" className="text-white bg-gradient-to-r from-cyan-500 to-teal-500 rounded-lg text-sm px-5 py-2.5 text-center font-montserrat mr-2 mb-2">VISIT STORE</a>
+         </div>
+  
+          </div>
+          </div>
+          </div>
+
+          <div className="lg:flex gap-10 mx-auto" >
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 mx-auto" >
+              <div className="text-8xl w-100 h-100 flex justify-center gap-16 py-3 text-gray-600 
+        " >
+          <div  className=" text-center font-montserrat  p-10  my-10 rounded-lg">
+          <p  className="text-gray-600">Full-Mint-Project</p>
+         <RoboPunksNFT className="md:h-96 md:w-96"/>
+         <p className=" font-montserrat text-gray-600 font-light text-lg max-w-5xl text-center dark:text-white" > This project combines a Solidity contract with Ethereum using the Goerli testnetwork to make a smart contract that sits inside a React app. The connect button will connect your MetaMask and from there you can mint, although I have disabled this feature as I don't have an NFT to be minted. The contract address is the follow: 0x33593636c4411e2D00a51B97deE2B5c0B6A606eB which can be consulted on etherscan(goerli).</p>
+         <a type="button" href="https://full-mint-website-ten.vercel.app/" target="_blank" rel="noreferrer" className="text-white bg-gradient-to-r from-cyan-500 to-teal-500 rounded-lg text-sm px-5 py-2.5 text-center font-montserrat mr-2 mb-2">VISIT MINT SITE</a>
          </div>
   
           </div>
