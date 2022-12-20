@@ -38,12 +38,12 @@ export default function Home() {
             <li><a className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 font-montserrat rounded-md ml-8 " href="https://github.com/PestoTrader" target="_blank" rel="noreferrer">Github</a></li>
           </ul>
           </nav>
-          <div className="text-center p-10">
+          <div className="text-center p-5">
             <h2 className="text-5xl py-2 text-teal-600 font-light md:text-6xl font-montserrat dark:text-white">Theo Scott</h2>
             <h3 className="py-2 font-medium text-sm text-gray-600 font-montserrat dark:text-white">FRONT END DEVELOPER, UI & UX DESIGNER</h3>
           
           </div>
-          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 
+          <div className="text-5xl flex justify-center py-3 text-gray-600 
         ">
             
             <a href="https://www.linkedin.com/in/theodore-scott-14a39326/" target="_blank" rel="noreferrer"><AiFillLinkedin /> </a>
@@ -56,7 +56,7 @@ export default function Home() {
 
         <section>
           
-          <div className="lg:flex gap-10 mx-auto" >
+          <div className="lg:flex lg:gap-10 flex gap-10 mx-auto" >
             <div className="text-center shadow-lg p-10 rounded-xl my-10 mx-auto">
               <div className="text-8xl w-100 h-100 flex justify-center gap-16 py-3 text-gray-600 
         " >
@@ -74,39 +74,40 @@ export default function Home() {
       
         </section>
         <section>
-            <div className="lg:flex gap-10">
-            <div>
-                  <div className="py-3">
-                    <div>
-                      <p className=" p-10 text-gray-600 font-montserrat font-light text-lg max-w-3xl text-center dark:text-white">The Weather App shows API integration using axios and sends get requests to a free weather service. Try entering a city name and clicking return.</p>
-                    </div>
-                    <div className=" text-center h-660 font-montserrat shadow-lg p-10  my-10 sm:my-0  md:basis-1/2 bg-gradient-to-b from-[#06B6D3] to-[#13B7A7] rounded-lg" > <p >Weather App</p>
+          
+
+              <div className="grid grid-cols-4 gap-3" >
+                
+                <div className="lg:col-start-1 lg:col-end-3 ... md:col-start-1 md:col-end-3 ... col-start-1 col-end-5 ... ">
+                  <p className="p-10 text-gray-600 font-montserrat font-light text-lg max-w-3xl text-center dark:text-white">The Weather App shows API integration using axios and sends get requests to a free weather service. Try entering a city name and clicking return.</p>
+                  <div className="h-660 bg-gradient-to-b from-[#06B6D3] to-[#13B7A7] rounded-lg">
+                  <p className="text-center">Weather App</p>
                   <WeatherAppi className="rounded-lg  " />
                   </div>
-                 
-                  </div>
                 </div>
-                <div >
-                  <div className="py-3"> 
-                    <div>
-                      <p className=" p-10 font-montserrat text-gray-600 font-light text-lg max-w-3xl text-center dark:text-white" > The Forgetful Thoughts App shows the use of function components used with state and effect hooks to create thoughts that will be erased after 15 seconds.</p>
-                    </div>
-                    <div className=" text-center h-660 font-montserrat shadow-lg p-10  my-10 sm:my-0 md:basis-1/2 bg-gradient-to-b from-[#C09FBA]
- to-[#F8BD86] rounded-lg" ><p>Forgetful Thoughts App</p>              
-                  <ThoughtPlanner className="rounded-lg " />
-                  </div>
-                  
-                  </div>  
+                
+
+                <div className="lg:col-start-3 lg:col-end-5 ... md:col-start-3 md:col-end-5 ... col-start-1 col-end-5 ...">
+                  <p className=" p-10 font-montserrat text-gray-600 font-light text-lg max-w-3xl text-center dark:text-white" > The Forgetful Thoughts App shows the use of function components used with state and effect hooks to create thoughts that will be erased after 15 seconds.</p>
+                  <div className=" h-660 bg-gradient-to-b from-[#C09FBA]
+ to-[#F8BD86] rounded-lg">
+
+                  <p className="text-center">Forgetful Thoughts App</p>   
+                   <ThoughtPlanner className="rounded-lg " />
                 </div>
+                </div>
+                
+
               </div>
-              <div className="lg:flex gap-10 mx-auto" >
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 mx-auto" >
-              <div className="text-8xl w-100 h-100 flex justify-center gap-16 py-3 text-gray-600 
-        " >
-          <div  className=" text-center font-montserrat  p-10  my-10 rounded-lg">
+
+
+              <div className="flex gap-10 mx-auto" >
+            <div className="text-center shadow-lg md:p-10 rounded-xl my-10 mx-auto" >
+              <div >
+          <div >
           <p  className="text-gray-600 p-10">Ecommerce Project</p>
-         <Ecommerce className="md:h-96 md:w-96"/>
-         <p className=" font-montserrat text-gray-600 font-light text-lg max-w-5xl text-center dark:text-white" > This e-commerce store was made using Next JS combined with Sanity to create a front and back end system in one. A client could be provided with access to Sanity CMS and add new products and change the banners and this would dynamically change the site and add new product pages. The payment page is currently connected to a test service provided by Stripe and will work upon entering 4242 continuosly as card number details.</p>
+         <Ecommerce />
+         <p className=" font-montserrat text-gray-600 font-light text-lg max-w-5xl text-center py-10 dark:text-white" > This e-commerce store was made using Next JS combined with Sanity to create a front and back end system in one. A client could be provided with access to Sanity CMS and add new products and change the banners and this would dynamically change the site and add new product pages. The payment page is currently connected to a test service provided by Stripe and will work upon entering 4242 continuosly as card number details.</p>
          <a type="button" href="https://ecommerce-sanity-build.vercel.app" target="_blank" rel="noreferrer" className="text-white bg-gradient-to-r from-cyan-500 to-teal-500 rounded-lg text-sm px-5 py-2.5 text-center font-montserrat mr-2 mb-2">VISIT STORE</a>
          </div>
   
@@ -114,20 +115,18 @@ export default function Home() {
           </div>
           </div>
 
-          <div className="lg:flex gap-10 mx-auto" >
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 mx-auto" >
-              <div className="text-8xl w-100 h-100 flex justify-center gap-16 py-3 text-gray-600 
-        " >
-          <div  className=" text-center font-montserrat  p-10  my-10 rounded-lg">
-          <p  className="text-gray-600 p-10">Full-Mint-Project</p>
-         <RoboPunksNFT className="md:h-96 md:w-96"/>
-         <p className=" font-montserrat text-gray-600 font-light text-lg max-w-5xl text-center dark:text-white" > This project combines a Solidity contract with Ethereum using the Goerli testnetwork to make a smart contract that sits inside a React app. The connect button will connect your MetaMask and from there you can mint, although I have disabled this feature as I don't have an NFT to be minted. The contract address is the following: 0x33593636c4411e2D00a51B97deE2B5c0B6A606eB which can be consulted on etherscan(goerli).</p>
+
+          <div className=" flex gap-10 mx-auto" >
+            <div className="text-center shadow-lg md:p-10 rounded-xl my-10 mx-auto" >
+           
+          <p  className="text-gray-600 p-10">Ecommerce Project</p>
+         <RoboPunksNFT />
+         <p className=" font-montserrat text-gray-600 font-light text-lg max-w-5xl text-center py-10 dark:text-white" > This e-commerce store was made using Next JS combined with Sanity to create a front and back end system in one. A client could be provided with access to Sanity CMS and add new products and change the banners and this would dynamically change the site and add new product pages. The payment page is currently connected to a test service provided by Stripe and will work upon entering 4242 continuosly as card number details.</p>
          <a type="button" href="https://full-mint-website-ten.vercel.app/" target="_blank" rel="noreferrer" className="text-white bg-gradient-to-r from-cyan-500 to-teal-500 rounded-lg text-sm px-5 py-2.5 text-center font-montserrat mr-2 mb-2">VISIT MINT SITE</a>
-         </div>
-  
+       
           </div>
           </div>
-          </div>
+
 
 
         

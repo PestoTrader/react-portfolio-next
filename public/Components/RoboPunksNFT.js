@@ -5,8 +5,8 @@ import RoboPunksPic from "../robopunksnft.png";
 
 const RoboPunksNFT = () => {
   return (
-    <div>
-      <ImageBg src={RoboPunksPic}/>
+    <div >
+      <ImageBg src={RoboPunksPic} className="rounded-xl"/>
     
     </div>
   )
