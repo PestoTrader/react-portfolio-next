@@ -27,7 +27,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-white px-10  md:px-20 lg:px-40 dark:bg-gray-900" >
+      <main className="bg-white px-2  md:px-20 lg:px-40 dark:bg-gray-900" >
         <section className="min-h-screen ">
         <nav className="py-5 mb-12 flex justify-between">
           <h1 className="text-xl font-montserrat text-gray-600 dark:text-white">THEO SCOTT</h1>
